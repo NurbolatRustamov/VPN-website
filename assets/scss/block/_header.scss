@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 58px;
+  &_menu {
+    display: flex;
+    gap: 40px;
+    li a {
+      font-family: Rubik-Regular;
+      font-size: 16px;
+      color: #4f5665;
+    }
+    li a:hover {
+      color: #f53855;
+      transition: 0.8s;
+    }
+  }
+  &_btn {
+    display: flex;
+    gap: 30px;
+    button {
+      padding: 13px 45px;
+      background-color: transparent;
+      border: 2px solid #f53855;
+      border-radius: 50px;
+      color: #f53855;
+      font-family: Rubik-Bold;
+      font-size: 16px;
+    }
+    button:hover {
+      cursor: pointer;
+      border: 2px solid white;
+      color: rgb(0, 0, 0);
+      transition: 0.8s;
+    }
+  }
+}
+.menu {
+  display: none;
+}
+@media (max-width: 1077px) {
+  .header {
+    &_menu {
+      gap: 20px;
+    }
+    &_btn {
+      gap: 10px;
+      button {
+        padding: 8px 25px;
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  .header {
+    &_menu,
+    &_btn {
+      display: none;
+    }
+    .menu {
+      display: block;
+      font-size: 25px;
+      color: #f53855;
+    }
+  }
+}

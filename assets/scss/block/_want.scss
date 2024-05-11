@@ -1,0 +1,129 @@
+.want {
+  display: flex;
+  justify-content: space-around;
+  &_imgs {
+    display: none;
+  }
+  &_img {
+    padding-top: 88px;
+  }
+  &_text {
+    padding-top: 120px;
+    h1 {
+      padding-bottom: 20px;
+      font-family: Rubik-Medium;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 70px;
+      text-align: left;
+      mark {
+        background-color: transparent;
+        font-family: Rubik-Bold;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 70px;
+        text-align: left;
+      }
+    }
+    p {
+      padding-bottom: 50px;
+      font-family: Rubik-Regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      color: #4f5665;
+      .br {
+        display: none;
+      }
+    }
+    button {
+      padding: 17px 77px;
+      background-color: #f53838;
+      border-radius: 10px;
+      border: 2px solid #f53838;
+      font-family: Rubik-Bold;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+      text-align: left;
+      color: rgb(255, 255, 255);
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      color: #f53838;
+      transition: 0.8s;
+    }
+  }
+}
+@media (max-width: 1242px) {
+  .want {
+    &_img {
+      display: none;
+    }
+    &_imgs {
+      display: block;
+      padding-top: 120px;
+      img {
+        width: 420px;
+      }
+    }
+  }
+}
+@media (max-width: 985px) {
+  .want {
+    &_text {
+      h1 {
+        font-size: 40px;
+        mark {
+          font-size: 40px;
+        }
+      }
+      p {
+        .br {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 864px) {
+  .want {
+    display: grid;
+    &_imgs {
+      img {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    &_text {
+      p,
+      h1 {
+        text-align: center;
+      }
+      button {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (max-width: 446px) {
+  .want {
+    &_text {
+      h1 {
+        font-size: 27px;
+        line-height: 44px;
+        mark {
+          font-size: 27px;
+        }
+      }
+    }
+    &_imgs {
+      img {
+        width: 320px;
+      }
+    }
+  }
+}
